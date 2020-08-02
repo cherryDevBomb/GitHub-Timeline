@@ -1,6 +1,6 @@
 import * as React from "react";
 import {VerticalTimelineElement} from "react-vertical-timeline-component";
-import {getFormattedDate} from "../utils/dateUtils";
+import {getFormattedDate, getFormattedShortDate} from "../utils/dateUtils";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -28,7 +28,7 @@ class GitHubRepo extends React.Component {
   render() {
     let repo = this.props.repo;
 
-    let dateParts = getFormattedDate(repo.created_at).split(" ");
+    let dateParts = getFormattedShortDate(repo.created_at).split(" ");
     let iconDate = (
       <div className="vertical-timeline-element-date">
         <Row className="my-auto">

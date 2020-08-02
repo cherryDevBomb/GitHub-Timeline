@@ -6,7 +6,21 @@ export const getFormattedDate = dateString => {
 
   let options;
   if (date.getFullYear() === now.getFullYear()) {
-    options = {month: "short", day: "numeric"};
+    options = {day: "numeric", month: "short"};
+  } else {
+    options = {day: "numeric", month: "short", year: "numeric"};
+  }
+
+  return date.toLocaleDateString("en-US", options);
+}
+
+export const getFormattedShortDate = dateString => {
+  let date = new Date(Date.parse(dateString));
+  let now = new Date();
+
+  let options;
+  if (date.getFullYear() === now.getFullYear()) {
+    options = {day: "numeric", month: "short"};
   } else {
     options = {month: "short", year: "numeric"};
   }
