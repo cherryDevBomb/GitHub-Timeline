@@ -1,5 +1,46 @@
-@media only screen and (min-width: 1170px) {
-  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-    left: 90%;
-  }
+.vertical-timeline-element-content {
+  background-color: #ffffff;
+  color: #24292e;
+  border-top: .25em solid #aaaaff;
 }
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #aaaaff;
+}
+
+.vertical-timeline-element-icon {
+  background: #aaaaff;
+  font-size: .5em;
+  padding-top: 24px;
+}
+
+.vertical-timeline-element-date {
+}
+
+.vertical-timeline-element-title {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.vertical-timeline-element-text {
+  font-weight: normal;
+  color: #586059;
+}
+
+.repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #aaaaff;
+}
+
+//
+//
+//@media only screen and (min-width: 1170px) {
+//  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+//    left: 124%;
+//  }
+//}

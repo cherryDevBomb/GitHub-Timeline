@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './style/index.css';
+import './style/button.css';
 import * as serviceWorker from './serviceWorker';
+import Timeline from "./components/Timeline";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Timeline/>
   </React.StrictMode>,
   document.getElementById('root')
 );

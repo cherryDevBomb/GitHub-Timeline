@@ -1,0 +1,25 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+body {
+  margin: 0;
+  background-color: #F0F0F0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+//$theme-colors: (
+//        //"primary": red ,
+//        //"secondary": $gold,
+//        //"info": $light-gold,
+//        //"success": $green,
+//        //"warning": $brick-red,
+//        //"danger": $red,
+//        "dark": #24292e,
+//        //"light": #ffffff
+//);
+
+@import "../../node_modules/bootstrap/scss/buttons";
