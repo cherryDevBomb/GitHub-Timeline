@@ -10,10 +10,24 @@
 
 .vertical-timeline-element-icon {
   background: #aaaaff;
-  font-size: 0.5em;
-  padding-top: 24px;
+  font-weight: 700;
 }
 
+.vertical-timeline-element-date {
+  width: 40px;
+  height: 40px;
+  font-size: 0.6rem;
+  padding-top: calc((40px - 1.8rem) / 2);
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+    padding-top: calc((60px - 2.4rem) / 2);
+  }
+}
 .vertical-timeline-element-title {
   font-weight: 600;
   font-size: 1.2em;

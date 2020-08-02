@@ -1,6 +1,6 @@
 import * as React from "react";
 import {VerticalTimelineElement} from "react-vertical-timeline-component";
-import {getShortDate} from "../utils/dateUtils";
+import {getFormattedDate} from "../utils/dateUtils";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -28,12 +28,21 @@ class GitHubRepo extends React.Component {
   render() {
     let repo = this.props.repo;
 
+    let dateParts = getFormattedDate(repo.created_at).split(" ");
+    let iconDate = (
+      <div className="vertical-timeline-element-date">
+        <Row className="my-auto">
+          <Col xs={12} className="mx-auto text-center">{dateParts[0]}</Col>
+          <Col xs={12} className="mx-auto text-center">{dateParts[1]}</Col>
+        </Row>
+      </div>
+    );
+
 
     return (
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        // date={getShortDate(repo.created_at)}
-        icon={getShortDate(repo.created_at)}
+        icon={iconDate}
       >
         <Container className="px-0 px-md-2 mb-n3">
           <Row>
@@ -64,7 +73,7 @@ class GitHubRepo extends React.Component {
               {repo.stargazers_count}
             </Col>
             <Col xs="auto" className="vertical-timeline-element-text small">
-              Updated {getShortDate(repo.updated_at)}
+              Updated {getFormattedDate(repo.updated_at)}
             </Col>
           </Row>
         </Container>

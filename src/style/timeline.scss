@@ -10,11 +10,23 @@
 
 .vertical-timeline-element-icon {
   background: #aaaaff;
-  font-size: .5em;
-  padding-top: 24px;
+  font-weight: 700;
 }
 
 .vertical-timeline-element-date {
+  width: 40px;
+  height: 40px;
+  font-size: .6rem;
+  padding-top: calc((40px - 1.8rem) / 2);
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    width: 60px;
+    height: 60px;
+    font-size: .8rem;
+    padding-top: calc((60px - 2.4rem) / 2);
+  }
 }
 
 .vertical-timeline-element-title {
@@ -36,11 +48,3 @@
   border-radius: 50%;
   background-color: #aaaaff;
 }
-
-//
-//
-//@media only screen and (min-width: 1170px) {
-//  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-//    left: 124%;
-//  }
-//}
