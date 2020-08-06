@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStar} from "@fortawesome/free-regular-svg-icons";
 import Button from "react-bootstrap/Button";
+import {getLanguageColor} from "../utils/colorUtils";
 
 class GitHubRepo extends React.Component {
   // constructor(props) {
@@ -28,6 +29,8 @@ class GitHubRepo extends React.Component {
   render() {
     let repo = this.props.repo;
 
+    const langColor = getLanguageColor(repo.language);
+
     let dateParts = getFormattedShortDate(repo.created_at).split(" ");
     let iconDate = (
       <div className="vertical-timeline-element-date">
@@ -38,10 +41,10 @@ class GitHubRepo extends React.Component {
       </div>
     );
 
-
     return (
       <VerticalTimelineElement
         className="vertical-timeline-element"
+        style={{'--lang-color': `${langColor}`}}
         icon={iconDate}
       >
         <Container className="px-0 px-md-2 mb-n3">
@@ -63,10 +66,12 @@ class GitHubRepo extends React.Component {
             </Col>
           </Row>
           <Row className="mt-3">
+            {repo.language &&
             <Col xs="auto" className="vertical-timeline-element-text small">
               <span className="repo-language-color mr-1"/>
               {repo.language}
             </Col>
+            }
             <Col xs="auto" className="vertical-timeline-element-text small">
               <FontAwesomeIcon icon={faStar} className="mr-1"/>
               {/*TODO format to show 1k on thousands (approximate to one decimal after comma)*/}
@@ -77,9 +82,6 @@ class GitHubRepo extends React.Component {
             </Col>
           </Row>
         </Container>
-        {/*<p className="vertical-timeline-element-text">*/}
-        {/*  {repo.description}*/}
-        {/*</p>*/}
       </VerticalTimelineElement>
     );
   }
