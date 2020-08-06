@@ -1,15 +1,17 @@
+$lang-color: var(--lang-color);
+
 .vertical-timeline-element-content {
   background-color: #ffffff;
   color: #24292e;
-  border-top: .25em solid #aaaaff;
+  border-top: .25em solid $lang-color;
 }
 
 .vertical-timeline-element-content-arrow {
-  border-right: 7px solid #aaaaff;
+  border-right: 7px solid $lang-color;
 }
 
 .vertical-timeline-element-icon {
-  background: #aaaaff;
+  background: $lang-color;
   font-weight: 700;
 }
 
@@ -46,5 +48,5 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #aaaaff;
+  background-color: $lang-color;
 }

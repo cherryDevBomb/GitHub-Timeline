@@ -22,6 +22,9 @@ export const getRepos = (user, page) => {
   url.searchParams.append(PAGE_PARAM, page);
   url.searchParams.append(PER_PAGE_PARAM, ITEMS_PER_PAGE);
 
+  // specifying a personal access token in the headers lets you increase github API rate limit
+  // see https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+  // on how to create a personal access token
   const headers = {headers: {"Authorization": "token " + TOKEN}};
 
   return fetch(url.toString(), headers)

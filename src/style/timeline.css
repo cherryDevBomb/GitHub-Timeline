@@ -1,15 +1,15 @@
 .vertical-timeline-element-content {
   background-color: #ffffff;
   color: #24292e;
-  border-top: 0.25em solid #aaaaff;
+  border-top: 0.25em solid var(--lang-color);
 }
 
 .vertical-timeline-element-content-arrow {
-  border-right: 7px solid #aaaaff;
+  border-right: 7px solid var(--lang-color);
 }
 
 .vertical-timeline-element-icon {
-  background: #aaaaff;
+  background: var(--lang-color);
   font-weight: 700;
 }
 
@@ -45,7 +45,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #aaaaff;
+  background-color: var(--lang-color);
 }
 
 /*# sourceMappingURL=timeline.css.map */
