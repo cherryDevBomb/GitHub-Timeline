@@ -8,6 +8,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStar} from "@fortawesome/free-regular-svg-icons";
 import Button from "react-bootstrap/Button";
 import {getLanguageColor} from "../utils/colorUtils";
+import {getFormattedStarsCount} from "../utils/numberUtils";
 
 class GitHubRepo extends React.Component {
   // constructor(props) {
@@ -74,8 +75,7 @@ class GitHubRepo extends React.Component {
             }
             <Col xs="auto" className="vertical-timeline-element-text small">
               <FontAwesomeIcon icon={faStar} className="mr-1"/>
-              {/*TODO format to show 1k on thousands (approximate to one decimal after comma)*/}
-              {repo.stargazers_count}
+              {getFormattedStarsCount(repo.stargazers_count)}
             </Col>
             <Col xs="auto" className="vertical-timeline-element-text small">
               Updated {getFormattedDate(repo.updated_at)}
