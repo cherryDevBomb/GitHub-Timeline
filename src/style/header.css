@@ -1,0 +1,38 @@
+#header {
+  background-color: #24292e;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.avatar-icon {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-top: -22px;
+  margin-left: 32px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+}
+
+@media only screen and (min-width: 1170px) {
+  .avatar-icon {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

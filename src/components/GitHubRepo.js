@@ -11,21 +11,6 @@ import {getLanguageColor} from "../utils/colorUtils";
 import {getFormattedStarsCount} from "../utils/numberUtils";
 
 class GitHubRepo extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //
-  //   let repo = this.props.repo;
-  //   this.state = {
-  //     name: repo.name,
-  //
-  //   }
-  // }
-
-  componentDidMount() {
-    // fetch("https://api.github.com/users/cherryDevBomb/repos")
-    //   .then(response => response.json())
-    //   .then(data => this.setState({repos: data}));
-  }
 
   viewInGitHub() {
     window.open(this.props.repo.html_url);

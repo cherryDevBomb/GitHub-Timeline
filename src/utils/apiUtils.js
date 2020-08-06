@@ -30,3 +30,18 @@ export const getRepos = (user, page) => {
   return fetch(url.toString(), headers)
     .then(response => response.json());
 }
+
+export const getUserInfo = user => {
+  console.log("getUserInfo called")
+
+  const path = HOST + USERS_PATH + "/" + user;
+  const url = new URL(path);
+
+  // specifying a personal access token in the headers lets you increase github API rate limit
+  // see https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+  // on how to create a personal access token
+  const headers = {headers: {"Authorization": "token " + TOKEN}};
+
+  return fetch(url.toString(), headers)
+    .then(response => response.json());
+}

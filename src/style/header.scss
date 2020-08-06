@@ -1,0 +1,40 @@
+$github-dark: #24292e;
+
+$avatar-size-sm: 44px;
+$avatar-size-lg: 100px;
+
+#header {
+  background-color: $github-dark;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: $avatar-size-lg / 2;
+}
+
+.avatar-icon {
+  width: $avatar-size-sm;
+  height: $avatar-size-sm;
+  padding: 0;
+  margin-top: -$avatar-size-sm / 2;
+  margin-left: 32px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+  width: $avatar-size-sm;
+  height: $avatar-size-sm;
+}
+
+@media only screen and (min-width: 1170px) {
+  .avatar-icon {
+    width: $avatar-size-lg;
+    height: $avatar-size-lg;
+    left: 50%;
+    margin-top: -$avatar-size-lg / 2;
+    margin-left: - $avatar-size-lg / 2;
+  }
+  .avatar {
+    width: $avatar-size-lg;
+    height: $avatar-size-lg;
+  }
+}
