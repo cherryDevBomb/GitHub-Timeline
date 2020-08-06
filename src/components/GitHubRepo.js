@@ -27,6 +27,10 @@ class GitHubRepo extends React.Component {
     //   .then(data => this.setState({repos: data}));
   }
 
+  viewInGitHub() {
+    window.open(this.props.repo.html_url);
+  }
+
   render() {
     let repo = this.props.repo;
 
@@ -54,8 +58,8 @@ class GitHubRepo extends React.Component {
               <h3 className="vertical-timeline-element-title">{repo.name}</h3>
             </Col>
             <Col>
-              {/*<Button size="sm" variant="outline-dark" className="float-right">*/}
-              <Button size="sm" variant="light" className="float-right">
+              <Button size="sm" variant="outline-dark" className="float-right" onClick={this.viewInGitHub.bind(this)}>
+              {/*<Button size="sm" variant="light" className="float-right" onClick={this.viewInGitHub.bind(this)}>*/}
                 <i className="fab fa-github mr-1"></i>
                 View in GitHub
               </Button>

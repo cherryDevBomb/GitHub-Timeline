@@ -2,12 +2,26 @@
   border-radius: .4em;
 }
 
+// variants
+
+$github-blue: lighten(#24292e, 15);
+
 .btn-light {
-  color: lighten(#24292e, 15);
+  color: $github-blue;
   background-color: #fafbfc;
-  border-color: rgba(27,31,35,.15);
-  box-shadow: 0 1px 0 rgba(27,31,35,.04);
+  border-color: rgba($github-blue, .15);
+  box-shadow: 0 1px 0 rgba($github-blue, .04);
 }
 .btn-light:hover {
-  background-color: rgba(27,31,35,.05);
+  background-color: rgba($github-blue, .05);
+}
+
+.btn-outline-dark {
+  color: $github-blue;
+  border-color: $github-blue;
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: $github-blue;
+  border-color: $github-blue;
 }
