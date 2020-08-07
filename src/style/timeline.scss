@@ -1,8 +1,10 @@
+@import "colors";
+
 $lang-color: var(--lang-color);
 
 .vertical-timeline-element-content {
   background-color: #ffffff;
-  color: #24292e;
+  color: $github-dark;
   border-top: .25em solid $lang-color;
 }
 

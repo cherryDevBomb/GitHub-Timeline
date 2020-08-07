@@ -6,20 +6,34 @@
 }
 
 .avatar-icon {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   padding: 0;
-  margin-top: -22px;
-  margin-left: 32px;
+  margin-top: -20px;
+  margin-left: 1.7em;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .avatar {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .avatar-icon {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin-top: -30px;
+    margin-left: 2.1em;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
 @media only screen and (min-width: 1170px) {
   .avatar-icon {
     width: 100px;
@@ -33,6 +47,27 @@
     width: 100px;
     height: 100px;
   }
+}
+.header-name {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #F1F1F1;
+}
+
+.header-username {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #E1E1E1;
+}
+
+.header-username:hover {
+  color: #2EA44F;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.header-bio {
+  color: #E9E9E9;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -26,20 +26,24 @@ class UserHeader extends React.Component {
       });
   }
 
+  viewInGitHub() {
+    window.open(this.state.userInfo.html_url);
+  }
+
   render() {
     let userInfo = this.state.userInfo;
 
     return (
       <React.Fragment>
-        <Container fluid id="header" className="pt-4">
-          <Row >
-            <Col>{userInfo.name}</Col>
+        <Container fluid id="header" className="pt-3 pt-md-4 pt-lg-5">
+          <Row>
+            <Col className="header-name">{userInfo.name}</Col>
           </Row>
-          <Row >
-            <Col>{userInfo.login}</Col>
+          <Row>
+            <Col xs="auto" className="header-username mx-auto p-0" onClick={this.viewInGitHub.bind(this)}>{userInfo.login}</Col>
           </Row>
-          <Row className="mb-3">
-            <Col>{userInfo.bio}</Col>
+          <Row className="mb-3 mb-lg-5 mt-4">
+            <Col className="header-bio">{userInfo.bio}</Col>
           </Row>
         </Container>
           <Row>

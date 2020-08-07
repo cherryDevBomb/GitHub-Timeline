@@ -1,7 +1,3 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-
 body {
   margin: 0;
   background-color: #F0F0F0;
@@ -9,17 +5,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-//$theme-colors: (
-//        //"primary": red ,
-//        //"secondary": $gold,
-//        //"info": $light-gold,
-//        //"success": $green,
-//        //"warning": $brick-red,
-//        //"danger": $red,
-//        "dark": #24292e,
-//        //"light": #ffffff
-//);
-
-@import "../../node_modules/bootstrap/scss/buttons";
