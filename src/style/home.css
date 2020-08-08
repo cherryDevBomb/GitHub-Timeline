@@ -1,0 +1,38 @@
+.home {
+  background-color: #24292e;
+  height: 100vh;
+}
+
+.home-text, .h1 {
+  color: #eeeeee;
+}
+
+.home-illustration {
+  border-top-left-radius: 100%;
+  padding-left: 150px !important;
+  padding-top: 60px !important;
+  background-color: #F0F0F0;
+  max-height: 100vh;
+}
+
+.input {
+  background-color: #24292e !important;
+  width: 300px;
+  font-size: 1.3em;
+}
+
+.btn-homesearch {
+  line-height: 1.5em;
+  font-size: 1.3em;
+  color: #A1A1A1;
+}
+
+.btn-homesearch:hover {
+  color: #2EA44F;
+}
+
+.btn-homesearch:focus {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=home.css.map */

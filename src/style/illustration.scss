@@ -1,0 +1,70 @@
+$lang-color: var(--lang-color);
+
+$gray-lightest: #F1F1F1;
+$gray-light: darken($gray-lightest, 7);
+
+.mockup-timeline-element-content {
+  background-color: #ffffff;
+  color: #A1A1A1;
+  border-top: .25em solid $lang-color;
+}
+
+.mockup-timeline-element-date {
+  width: 20px;
+  height: 20px;
+}
+
+.mockup-timeline-element-icon {
+  background: $lang-color;
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: -10px !important;
+}
+
+.mockup-btn {
+  font-size: .6em;
+  color: white;
+  border-color: darken($gray-light, 10);
+}
+
+.mockup-btn:hover {
+  font-size: .6em;
+  color: white;
+  background-color: white;
+  border-color: darken($gray-light, 10);
+}
+
+.mockup-btn-text {
+  color: #fff;
+  font-size: .6em;
+}
+
+.mockup-timeline-element-title {
+  font-size: 1em;
+  background-color: $gray-light;
+  color: $gray-light;
+  min-width: fit-content;
+  border-radius: 5em;
+}
+
+.mockup-timeline-element-text {
+  font-weight: normal;
+  font-size: .8em;
+  background-color: $gray-lightest;
+  color: $gray-lightest;
+  min-width: fit-content;
+  border-radius: 5em;
+}
+
+.mockup-small {
+  font-size: .6em;
+}
+
+.mockup-repo-language-color {
+  position: relative;
+  display: inline-block;
+  width: .7em;
+  height: .7em;
+  border-radius: 50%;
+  background-color: $lang-color;
+}

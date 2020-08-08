@@ -1,0 +1,42 @@
+@import "colors";
+
+.home {
+  background-color: $github-dark;
+  height: 100vh;
+}
+
+.home-content {
+}
+
+.home-text, .h1 {
+  color: lighten(#A1A1A1, 30);
+}
+
+.home-illustration {
+  border-top-left-radius: 100%;
+  padding-left: 150px !important;
+  padding-top: 60px !important;
+  background-color: #F0F0F0;
+  max-height: 100vh;
+}
+
+// search bar overrides
+.input {
+  background-color: $github-dark !important;
+  width: 300px;
+  font-size: 1.3em;
+}
+
+.btn-homesearch {
+  line-height: 1.5em;
+  font-size: 1.3em;
+  color: #A1A1A1;
+}
+
+.btn-homesearch:hover {
+  color: $github-green;
+}
+
+.btn-homesearch:focus {
+  box-shadow: none;
+}

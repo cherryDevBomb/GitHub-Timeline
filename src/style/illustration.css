@@ -1,0 +1,67 @@
+.mockup-timeline-element-content {
+  background-color: #ffffff;
+  color: #A1A1A1;
+  border-top: 0.25em solid var(--lang-color);
+}
+
+.mockup-timeline-element-date {
+  width: 20px;
+  height: 20px;
+}
+
+.mockup-timeline-element-icon {
+  background: var(--lang-color);
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: -10px !important;
+}
+
+.mockup-btn {
+  font-size: 0.6em;
+  color: white;
+  border-color: #c6c6c6;
+}
+
+.mockup-btn:hover {
+  font-size: 0.6em;
+  color: white;
+  background-color: white;
+  border-color: #c6c6c6;
+}
+
+.mockup-btn-text {
+  color: #fff;
+  font-size: 0.6em;
+}
+
+.mockup-timeline-element-title {
+  font-size: 1em;
+  background-color: #dfdfdf;
+  color: #dfdfdf;
+  min-width: fit-content;
+  border-radius: 5em;
+}
+
+.mockup-timeline-element-text {
+  font-weight: normal;
+  font-size: 0.8em;
+  background-color: #F1F1F1;
+  color: #F1F1F1;
+  min-width: fit-content;
+  border-radius: 5em;
+}
+
+.mockup-small {
+  font-size: 0.6em;
+}
+
+.mockup-repo-language-color {
+  position: relative;
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  background-color: var(--lang-color);
+}
+
+/*# sourceMappingURL=illustration.css.map */
