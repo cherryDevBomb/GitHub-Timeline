@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import SearchBar from "./SearchBar";
+import {withRouter} from "react-router-dom";
 
 class UserHeader extends React.Component {
   constructor(props) {
@@ -18,10 +19,23 @@ class UserHeader extends React.Component {
   }
 
   componentDidMount() {
-    getUserInfo(this.state.user,)
+    this.getUserInfo(this.state.user);
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.user !== this.props.user) {
+      this.getUserInfo(this.props.user);
+    }
+  }
+
+  getUserInfo(user) {
+    getUserInfo(user)
       .then(data => {
         if (data) {
-          this.setState({userInfo: data});
+          this.setState({
+            user: user,
+            userInfo: data
+          });
         }
       });
   }
@@ -58,4 +72,4 @@ class UserHeader extends React.Component {
   }
 }
 
-export default UserHeader;
+export default withRouter(UserHeader);

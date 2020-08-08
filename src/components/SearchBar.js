@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
+import {withRouter} from "react-router-dom";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -18,7 +19,6 @@ class SearchBar extends React.Component {
   }
 
   toggle() {
-    console.log(this.state.expanded)
     this.setState({"expanded": !this.state.expanded})
   }
 
@@ -28,13 +28,18 @@ class SearchBar extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    //TODO use this.state.input to generate new page
+    const newPath = "/" + this.state.input;
+    this.props.history.push(newPath);
+    this.setState({
+      expanded: false,
+      input: ""
+    })
   }
 
   render() {
     const inputClassName = this.state.expanded ? "input-true" : "input-false";
     const searchBarClassName = this.state.expanded ? "search-bar-focus" : "search-bar-no-hover";
-    const buttonClassName = this.state.expanded ? " btn-search:focus" : "";
+    const buttonClassName = this.state.expanded ? " btn-search-focus" : "";
 
     return (
       <React.Fragment>
@@ -64,4 +69,4 @@ class SearchBar extends React.Component {
   }
 }
 
-export default SearchBar;
+export default withRouter(SearchBar);

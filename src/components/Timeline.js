@@ -5,6 +5,7 @@ import "../style/timeline.css"
 import GitHubRepo from "./GitHubRepo";
 import {getRepos} from "../utils/apiUtils";
 import UserHeader from "./UserHeader";
+import {withRouter} from "react-router-dom";
 
 class Timeline extends React.Component {
   constructor(props) {
@@ -17,6 +18,19 @@ class Timeline extends React.Component {
 
   componentDidMount() {
     this.getAllRepos(this.state.user, 1);
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.match.params.username !== this.props.match.params.username) {
+      this.setState({
+        repos: [],
+        user: this.props.match.params.username
+      }, () => {
+        if (this.state.repos.length === 0) {
+          this.getAllRepos(this.state.user, 1);
+        }
+      })
+    }
   }
 
   getAllRepos(user, page) {
@@ -44,4 +58,4 @@ class Timeline extends React.Component {
   }
 }
 
-export default Timeline;
+export default withRouter(Timeline);
