@@ -16,7 +16,7 @@ $avatar-size-lg: 100px;
   height: $avatar-size-sm;
   padding: 0;
   margin-top: -$avatar-size-sm / 2;
-  margin-left: 1.7em;
+  margin-left: 0.7em;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
@@ -32,7 +32,7 @@ $avatar-size-lg: 100px;
     height: $avatar-size-md;
     padding: 0;
     margin-top: -$avatar-size-md / 2;
-    margin-left: 2.1em;
+    margin-left: 1.1em;
   }
   .avatar {
     width: $avatar-size-md;
