@@ -14,8 +14,6 @@ const ITEMS_PER_PAGE = "20";
 
 
 export const getRepos = (user, page) => {
-  console.log("getRepos called")
-
   const path = HOST + USERS_PATH + "/" + user + REPOS_PATH;
   const url = new URL(path);
   url.searchParams.append(SORT_PARAM, SORT_OPTION_BY_CREATED_DATE);
@@ -32,8 +30,6 @@ export const getRepos = (user, page) => {
 }
 
 export const getUserInfo = user => {
-  console.log("getUserInfo called")
-
   const path = HOST + USERS_PATH + "/" + user;
   const url = new URL(path);
 
