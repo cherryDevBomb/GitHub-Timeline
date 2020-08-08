@@ -33,13 +33,13 @@ class SearchBar extends React.Component {
 
   render() {
     const inputClassName = this.state.expanded ? "input-true" : "input-false";
-    const searchBarClassName = this.state.expanded ? " search-bar-focus" : "";
-    const buttonClassName = this.state.expanded ? " btn-search-focus" : "";
+    const searchBarClassName = this.state.expanded ? "search-bar-focus" : "search-bar-no-hover";
+    const buttonClassName = this.state.expanded ? " btn-search:focus" : "";
 
     return (
       <React.Fragment>
         <Row noGutters id="search-bar-row" className="flex-row-reverse mx-0 pt-3">
-          <div className={"search-bar mr-3" + searchBarClassName}>
+          <div className={"search-bar mr-3 " + searchBarClassName}>
             <Col xs="auto" className="float-right p-0">
               <Button variant="search" className={buttonClassName} onClick={this.toggle.bind(this)}>
                 <FontAwesomeIcon icon={faSearch}/>

@@ -23,10 +23,7 @@
   background-color: #343b42;
   border: none;
   border-radius: 0.4rem;
-}
-
-.input {
-  background-color: #24292e;
+  box-shadow: none;
 }
 
 .input-true {
@@ -51,10 +48,22 @@
 
 .btn-search:focus {
   box-shadow: none;
+  background-color: #343b42;
 }
 
-.btn-search-focus {
-  background-color: #343b42;
+@media (hover: none) {
+  .btn-search, .btn-search:hover {
+    color: #A1A1A1;
+    background-color: transparent;
+  }
+
+  .search-bar:hover {
+    border: 1px solid #343b42;
+  }
+
+  .search-bar-no-hover:hover {
+    border: 1px solid #A1A1A1;
+  }
 }
 
 /*# sourceMappingURL=searchbar.css.map */

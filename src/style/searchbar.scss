@@ -29,11 +29,7 @@ $search-bar-color: #A1A1A1;
   background-color: lighten($github-dark, 7);
   border: none;
   border-radius: .4rem;
-}
-
-
-.input {
-  background-color: $github-dark;
+  box-shadow: none;
 }
 
 .input-true {
@@ -59,8 +55,21 @@ $search-bar-color: #A1A1A1;
 
 .btn-search:focus {
   box-shadow: none;
+  background-color: lighten($github-dark, 7);
+
 }
 
-.btn-search-focus {
-  background-color: lighten($github-dark, 7);
+// suppress hover color change on devices that don't support hover
+@media (hover:none) {
+  .btn-search, .btn-search:hover {
+    color: $search-bar-color;
+    background-color: transparent;
+  }
+  .search-bar:hover {
+    border: 1px solid lighten($github-dark, 7);
+
+  }
+  .search-bar-no-hover:hover {
+    border: 1px solid $search-bar-color;
+  }
 }
