@@ -12,7 +12,7 @@ class UserHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: "cherryDevBomb",
+      user: this.props.user,
       userInfo: {}
     }
   }

@@ -11,7 +11,7 @@ class Timeline extends React.Component {
     super(props);
     this.state = {
       repos: [],
-      user: "cherryDevBomb"
+      user: this.props.match.params.username
     }
   }
 
@@ -35,7 +35,7 @@ class Timeline extends React.Component {
 
     return (
       <React.Fragment>
-        <UserHeader/>
+        <UserHeader user={this.state.user}/>
         <VerticalTimeline>
           {reposCards}
         </VerticalTimeline>

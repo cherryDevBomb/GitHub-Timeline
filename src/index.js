@@ -4,11 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './style/index.css';
 import './style/button.css';
 import * as serviceWorker from './serviceWorker';
-import Timeline from "./components/Timeline";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Timeline/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

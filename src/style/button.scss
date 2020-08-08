@@ -3,6 +3,9 @@
 .btn {
   border-radius: .4em;
 }
+.btn:focus {
+  box-shadow: none;
+}
 
 // variants
 .btn-light {
