@@ -21,13 +21,18 @@
   font-size: 1.3em;
 }
 
+.search-bar-focus, .search-bar-focus:hover {
+  border: 1px solid #2EA44F;
+  background-color: #24292e;
+}
+
 .btn-homesearch {
   line-height: 1.5em;
   font-size: 1.3em;
   color: #A1A1A1;
 }
 
-.btn-homesearch:hover {
+.btn-homesearch:hover, .btn-homesearch-focus {
   color: #2EA44F;
 }
 

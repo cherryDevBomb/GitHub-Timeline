@@ -14,6 +14,7 @@ class Home extends Component {
           <Col xs="5" className="text-center my-auto home-content">
             <div className="my-auto">
               <h1 className="home-text mb-3">Get your GitHub timeline</h1>
+              <h5 className="mb-5 font-weight-light text-muted">A beautifully structured representation of all your GitHub repositories</h5>
               <HomeSearchBar/>
             </div>
           </Col>

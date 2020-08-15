@@ -48,12 +48,12 @@ class HomeTimeline extends Component {
   render() {
     return (
       <VerticalTimeline className="mockup-timeline">
-        {/*{this.getMockupElement("#4285f4")}*/}
-        {/*{this.getMockupElement("#fbbc05")}*/}
-        {/*{this.getMockupElement("#ea4335")}*/}
-        {this.getMockupElement("#8fbdff")}
-        {this.getMockupElement("#f1e05a")}
-        {this.getMockupElement("#f3968e")}
+        {this.getMockupElement("#4285f4")}
+        {this.getMockupElement("#fbbc05")}
+        {this.getMockupElement("#ea4335")}
+        {/*{this.getMockupElement("#8fbdff")}*/}
+        {/*{this.getMockupElement("#f1e05a")}*/}
+        {/*{this.getMockupElement("#f3968e")}*/}
       </VerticalTimeline>
     )
   }
