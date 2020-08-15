@@ -36,22 +36,18 @@ class HomeSearchBar extends React.Component {
   }
 
   onInputHover(e) {
-    console.log("onHover called")
     this.setState({hovered: true})
   }
 
   onHoverOutsideInput(e) {
-    console.log("onUnhover called")
     this.setState({hovered: false})
   }
 
   onInputClick(e) {
-    console.log("onFocus called")
     this.setState({focused: true})
   }
 
   onClickOutsideInput(e) {
-    console.log("onUnfocus called")
     this.setState({focused: false})
   }
 
@@ -66,7 +62,7 @@ class HomeSearchBar extends React.Component {
 
   render() {
     const isSearchActive = this.state.hovered || this.state.focused;
-    const searchBarClassName = isSearchActive ? "search-bar-focus" : "";
+    const searchBarClassName = isSearchActive ? "homesearch-bar-focus" : "";
     const searchBtnClassName = isSearchActive ? "btn-homesearch-focus" : "";
 
     return (
@@ -83,6 +79,7 @@ class HomeSearchBar extends React.Component {
               <Form onSubmit={this.onSubmit.bind(this)}>
                 <Form.Control
                   ref={this.inputRef}
+                  name="input"
                   className="input"
                   type="text"
                   placeholder="Enter username..."
