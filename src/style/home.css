@@ -1,6 +1,5 @@
 .home {
   background-color: #24292e;
-  height: 100vh;
 }
 
 .home-text, .h1 {
@@ -12,7 +11,7 @@
   padding-left: 150px !important;
   padding-top: 60px !important;
   background-color: #F0F0F0;
-  max-height: 100vh;
+  display: flex;
 }
 
 .input {

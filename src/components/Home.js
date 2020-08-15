@@ -11,14 +11,14 @@ class Home extends Component {
     return (
       <Container fluid className="home p-0">
         <Row noGutters className="vh-100">
-          <Col xs="5" className="text-center my-auto home-content">
-            <div className="my-auto">
+          <Col xs="12" lg="5" className="text-center my-auto home-content">
+            <div className="my-auto pt-5 pb-3 py-lg-0">
               <h1 className="home-text mb-3">Get your GitHub timeline</h1>
               <h5 className="mb-5 font-weight-light text-muted">A beautifully structured representation of all your GitHub repositories</h5>
               <HomeSearchBar/>
             </div>
           </Col>
-          <Col xs="7" className="home-illustration pl-3">
+          <Col xs="12" lg="7" className="home-illustration pl-3 mt-4 mt-lg-0">
             <HomeTimeline/>
           </Col>
         </Row>
