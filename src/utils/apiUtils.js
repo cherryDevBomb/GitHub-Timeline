@@ -10,7 +10,7 @@ const PER_PAGE_PARAM = "per_page";
 const SORT_PARAM = "sort";
 
 const SORT_OPTION_BY_CREATED_DATE = "author_date";
-const ITEMS_PER_PAGE = "20";
+const ITEMS_PER_PAGE = "40";
 
 
 export const getRepos = (user, page) => {
