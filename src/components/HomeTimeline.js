@@ -13,6 +13,7 @@ class HomeTimeline extends Component {
       <VerticalTimelineElement
         className="mockup-timeline-element"
         iconClassName="mockup-timeline-element-icon"
+        dateClassName="mockup-no-date"
         contentArrowStyle={{border: 'none'}}
         style={{'--lang-color': `${color}`}}
       >
