@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/GitHub-Timeline/static/css/main.9478c168.chunk.css",
-    "main.js": "/GitHub-Timeline/static/js/main.0568d46c.chunk.js",
-    "main.js.map": "/GitHub-Timeline/static/js/main.0568d46c.chunk.js.map",
-    "runtime-main.js": "/GitHub-Timeline/static/js/runtime-main.495c8a94.js",
-    "runtime-main.js.map": "/GitHub-Timeline/static/js/runtime-main.495c8a94.js.map",
-    "static/css/2.5081701e.chunk.css": "/GitHub-Timeline/static/css/2.5081701e.chunk.css",
-    "static/js/2.77b49eaa.chunk.js": "/GitHub-Timeline/static/js/2.77b49eaa.chunk.js",
-    "static/js/2.77b49eaa.chunk.js.map": "/GitHub-Timeline/static/js/2.77b49eaa.chunk.js.map",
-    "index.html": "/GitHub-Timeline/index.html",
-    "precache-manifest.d6ed9dfcba5b414ad82e38a4d6f3a970.js": "/GitHub-Timeline/precache-manifest.d6ed9dfcba5b414ad82e38a4d6f3a970.js",
-    "service-worker.js": "/GitHub-Timeline/service-worker.js",
-    "static/css/2.5081701e.chunk.css.map": "/GitHub-Timeline/static/css/2.5081701e.chunk.css.map",
-    "static/css/main.9478c168.chunk.css.map": "/GitHub-Timeline/static/css/main.9478c168.chunk.css.map",
-    "static/js/2.77b49eaa.chunk.js.LICENSE.txt": "/GitHub-Timeline/static/js/2.77b49eaa.chunk.js.LICENSE.txt"
+    "main.css": "/github-timeline/static/css/main.f3c545e5.chunk.css",
+    "main.js": "/github-timeline/static/js/main.a920ffff.chunk.js",
+    "main.js.map": "/github-timeline/static/js/main.a920ffff.chunk.js.map",
+    "runtime-main.js": "/github-timeline/static/js/runtime-main.c3b03ffb.js",
+    "runtime-main.js.map": "/github-timeline/static/js/runtime-main.c3b03ffb.js.map",
+    "static/css/2.5081701e.chunk.css": "/github-timeline/static/css/2.5081701e.chunk.css",
+    "static/js/2.77b49eaa.chunk.js": "/github-timeline/static/js/2.77b49eaa.chunk.js",
+    "static/js/2.77b49eaa.chunk.js.map": "/github-timeline/static/js/2.77b49eaa.chunk.js.map",
+    "index.html": "/github-timeline/index.html",
+    "precache-manifest.38b762bf5ae78deef997b3fb882caf48.js": "/github-timeline/precache-manifest.38b762bf5ae78deef997b3fb882caf48.js",
+    "service-worker.js": "/github-timeline/service-worker.js",
+    "static/css/2.5081701e.chunk.css.map": "/github-timeline/static/css/2.5081701e.chunk.css.map",
+    "static/css/main.f3c545e5.chunk.css.map": "/github-timeline/static/css/main.f3c545e5.chunk.css.map",
+    "static/js/2.77b49eaa.chunk.js.LICENSE.txt": "/github-timeline/static/js/2.77b49eaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.495c8a94.js",
+    "static/js/runtime-main.c3b03ffb.js",
     "static/css/2.5081701e.chunk.css",
     "static/js/2.77b49eaa.chunk.js",
-    "static/css/main.9478c168.chunk.css",
-    "static/js/main.0568d46c.chunk.js"
+    "static/css/main.f3c545e5.chunk.css",
+    "static/js/main.a920ffff.chunk.js"
   ]
 }
