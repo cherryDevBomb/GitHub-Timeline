@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <Router>
         <Switch className="p-0 m-0">
-          <Route exact path={"/github-timeline"} component={Home}/>
-          <Route exact path={"/github-timeline/:username"} component={Timeline}/>
+          <Route exact path={"/GitHub-Timeline"} component={Home}/>
+          <Route exact path={"/GitHub-Timeline/:username"} component={Timeline}/>
         </Switch>
       </Router>
     )

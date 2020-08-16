@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    const newPath = "/github-timeline/" + this.state.input;
+    const newPath = "/GitHub-Timeline/" + this.state.input;
     this.props.history.push(newPath);
     this.setState({
       expanded: false,
