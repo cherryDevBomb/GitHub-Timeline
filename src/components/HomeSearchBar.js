@@ -53,7 +53,7 @@ class HomeSearchBar extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    const newPath = "/GitHub-Timeline/" + this.state.input;
+    const newPath = "/github-timeline/" + this.state.input;
     this.props.history.push(newPath);
     this.setState({
       input: ""

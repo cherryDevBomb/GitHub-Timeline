@@ -6,7 +6,6 @@ $search-bar-color: #A1A1A1;
   background-color: $github-dark;
 }
 
-
 .search-bar {
   border: 1px solid $search-bar-color;
   border-radius: .4em;
@@ -38,7 +37,7 @@ $search-bar-color: #A1A1A1;
 }
 
 .input-true {
-  width: 200px;
+  width: 210px;
   transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 

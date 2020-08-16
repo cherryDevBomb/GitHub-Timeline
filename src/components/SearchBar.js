@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    const newPath = "/GitHub-Timeline/" + this.state.input;
+    const newPath = "/github-timeline/" + this.state.input;
     this.props.history.push(newPath);
     this.setState({
       expanded: false,
@@ -56,7 +56,7 @@ class SearchBar extends React.Component {
                   name="input"
                   className={inputClassName}
                   type="text"
-                  placeholder="Enter a username..."
+                  placeholder="Enter another username..."
                   autoComplete="off"
                   value={this.state.input}
                   onChange={this.onChange.bind(this)}
