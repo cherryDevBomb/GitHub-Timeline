@@ -10,6 +10,8 @@ A web app that builds an overview of your GitHub repositories using the GitHub A
 - `yarn`
 
 ##### Running on localhost
+- clone the repository
+- run `yarn install`
 - run `yarn start`
 - go to `localhost:3000/GitHub-Timeline` to access the app
 
